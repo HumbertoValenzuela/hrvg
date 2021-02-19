@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio FrontEnd html css javascript"/>
+    <link  rel="icon"   href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="normalize.css">   
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Humberto Valenzuela | FrontEnd </title>
+</head>
+<body>
+    <header class="page-header">
+    <nav class="nav">
+        <div class="nav__div-icono">
+          <img class="nav__div-logo" src="assets/logoHumberto.png" alt="Humberto Valenzuela">
+        <svg class="nav__svg-icon" viewBox="0 0 20 20">
+            <path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+                c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+                s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+                c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+        </svg>
+        </div>
+        <ul class="navbar__links desaparece">
+          <li class="navbar__link active"> <a href="#inicio">    <i class="fas fa-home">         </i> INICIO</a></li>
+          <li class="navbar__link active"> <a href="#acerca">    <i class="far fa-address-card"> </i> ACERCA</a></li>
+          <li class="navbar__link active"> <a href="#services">  <i class="fas fa-hand-holding"> </i> SERVICIOS</a></li>
+          <li class="navbar__link active"> <a href="#portafolio"><i class="fas fa-suitcase">     </i> PORTAFOLIO</a></li>
+          <li class="navbar__link active"> <a href="#contacto">  <i class="fas fa-phone-alt">    </i> CONTACTO</a></li>
+        </ul>      
+    </nav>
+    </header>
+
+    <section id="inicio" class="home">
+        <div class="home__background"></div>
+        <picture>
+          <source type="image/webp" srcset="./assets/profile.png" />
+          <source type="image/jpeg" srcset="./assets/profile.png" />
+          <img class="home__profile" alt="picture profile" />
+        </picture>
+        <div class="home__description">
+          <span class="home__title--primary">¡Hola!</span>
+          <h1 class="home__title">Soy Humberto Valenzuela.</h1>
+          <span class="home__title--secondary">- Desarrollo FrontEnd -</span>
+        </div>
+      </section>
+
+      <section id="acerca">
+        <div class="container">
+          <h2 class="section__title">Acerca</h2>
+          <div class="about__grid">
+            <div class="about__description">
+              <h3>¿Quién soy?</h3>
+              <h2>Soy un apasionado por el desarrollo web</h2>
+              <p>
+                Vivo en Chile - Quinta Región y he estado diseñando sitios web
+                que cumplen con la tendencia de diseño
+              </p>
+              <a
+                class="button--cta"
+                href="./assets/CV.hbto.valenzuela.docx"
+                download="HumbertoValenzuelaCV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-file-download"></i>Download CV
+              </a>
+            </div>
+            <div class="about__skills">
+              <div class="skill__title">
+                <h3>Mis Habilidades:</h3>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-html5"></i>
+                <div class="skill__name">HTML</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-css3-alt"></i>
+                <div class="skill__name">CSS</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-js"></i>
+                <div class="skill__name">JAVASCRIPT</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-sass"></i>
+                <div class="skill__name">SASS</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-bootstrap"></i>
+                <div class="skill__name">BOOTSTRAP</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-react"></i>
+                <div class="skill__name">REACT</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-git-alt"></i>
+                <div class="skill__name">GIT</div>
+              </div>
+              <div class="skill__item">
+                <i class="fab fa-node"></i>
+                <div class="skill__name">NODE</div>
+              </div>
+              <div class="skill__item">
+                <i class="fas fa-database"></i>
+                <div class="skill__name">SQL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2 class="section__title">Servicios</h2>
+          <h3 class="section__subtitle">Servicio a los clientes</h3>
+          <div class="services__grid">
+            <div class="services__item">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Responsive Design</h3>
+              <p>
+                El sitio se mostrará correctamente en cualquier dispositivo, como
+                Computadores, Tablet, Teléfonos móviles 
+              </p>
+            </div>
+            <div class="services__item">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Interfaz de Usuario UI</h3>
+              <p>
+                Controles de entrada, controles de navegación, elementos de información
+              </p>
+            </div>
+            <div class="services__item">
+              <i class="fas fa-code"></i>
+              <h3>Desarrollo</h3>
+              <p>
+                Sitio interactivo, grillas, formularios con cliente servidor
+              </p>
+            </div>
+            <div class="services__item">
+              <i class="fas fa-thumbs-up"></i>
+              <h3>Integración de redes sociales</h3>
+              <p>
+                Mejorando la interacción con el cliente 
+              </p>
+            </div>
+            <div class="services__item">
+              <i class="fas fa-tachometer-alt"></i>
+              <h3>Rendimiento</h3>
+              <p>
+                Patron de diseño.
+              </p>
+            </div>
+            <div class="services__item">
+              <i class="fas fa-crosshairs"></i>
+              <h3>SEO</h3>
+              <p>
+                Search Engine Optimization. Para los motores de busqueda
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portafolio">
+        <div class="container">
+          <h2 class="section__title">Portafolio</h2>
+          <h3 class="section__subtitle">Mis trabajos</h3>
+          <div class="section__underline"></div>
+       
+          </div>
+        </div>
+      </section>
+
+<!-- Contacto -->
+      <section id="contacto">
+        <div class="container">
+          <h2 class="section__title">Contacto</h2>
+          <h3 class="section__subtitle">          
+            Eres libre de contactarme
+          </h3>
+          <div class="contact__grid">
+            <a href="tel:+56-966299793">
+              <div class="contact__item">
+                <i class="fas fa-phone-alt"></i>
+                <p>Llamame</p>
+              </div>
+            </a>
+            <a
+              href="mailto:hvg.informatico@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact__item">
+                <i class="fas fa-at"></i>
+                <p>Correo</p>
+              </div>
+            </a>
+          
+            <a
+              href="https://wa.me/56966299793?text=Hola%20Humberto,%20Hablemos%20de%20trabajo"
+              class="whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact__item">
+                <i class="fab fa-whatsapp"></i>
+                <p>whatsapp</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/diegobrice"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact__item">
+                <i class="fab fa-github"></i>
+                <p>Sigueme</p>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/diegobrice"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact__item">
+                <i class="fab fa-twitter"></i>
+                <p>Sigueme</p>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/diegobrice/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact__item">
+                <i class="fab fa-linkedin-in"></i>
+                <p>Contactame</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <p>
+            Copyright © 2021. <a href="#">@humbertovalenzuela</a> <br />
+            All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    <script src="Index.js"></script>
+</body>
+</html>
